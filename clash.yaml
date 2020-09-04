@@ -131,12 +131,6 @@ Proxy Group:
   type: select
   proxies:
     - "BW-GIA"
-
-# 代理节点选择
-- name: "PROXY"
-  type: select
-  proxies:
-    - "BW-GIA"
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
   type: select
