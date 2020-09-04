@@ -62,7 +62,7 @@ Proxy:
   port: 60678
   cipher: aes-256-cfb
   password: "webweb"
-  udp: false
+  udp: 是否启用 UDP
 
 Proxy Group:
 
