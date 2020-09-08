@@ -4,19 +4,23 @@ redir-port: 7892
 allow-lan: false
 mode: Rule
 log-level: info
+ipv6: true
 external-controller: '0.0.0.0:9090'
 secret: ''
 
 dns:
   enable: true
   nameserver:
-    - 1.2.4.8
+    - https://10120.alidns.com/dns-query
+    - 223.5.5.5
+    - 226.6.6.6
     - 114.114.114.114
     - 223.5.5.5
-    - tls://dns.rubyfish.cn:853
   fallback:
+    - https://10120.alidns.com/dns-query
     - tls://1.0.0.1:853
     - tls://dns.google:853
+    - https://cloudflare-dns.com/dns-query
 
 cfw-bypass:
     - qq.com
