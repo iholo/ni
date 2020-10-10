@@ -11,7 +11,7 @@ secret: ""
 dns:
   enable: true
   nameserver:
-    - https://10120.alidns.com/dns-query
+    # - https://10120.alidns.com/dns-query
     - 223.5.5.5
     - 226.6.6.6
     - 114.114.114.114
