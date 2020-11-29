@@ -38,12 +38,20 @@ proxies:
     cipher: aes-256-cfb
     password: webweb
     udp: false
+  - name: "Vultr-JP"
+    type: ss
+    server: 167.179.97.200
+    port: 60678
+    cipher: aes-256-cfb
+    password: webweb
+    udp: false
 proxy-groups:
   # 代理节点选择
   - name: "PROXY"
     type: select
     proxies:
       - "BW-GIA"
+      - "Vultr-JP"
   # 白名单模式 PROXY，黑名单模式 DIRECT
   - name: "Final"
     type: select
@@ -68,6 +76,7 @@ proxy-groups:
     proxies:
       - "DIRECT"
       - "BW-GIA"
+      - "Vultr-JP"
   # 运营商及声名狼藉网站劫持
   - name: "Hijacking"
     type: select
