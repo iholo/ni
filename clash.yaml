@@ -123,6 +123,13 @@ Proxy:
     password: webweb
     udp: false
 
+  - name: "Vultr-JP"
+    type: ss
+    server: 167.179.97.200
+    port: 60678
+    cipher: aes-256-cfb
+    password: webweb
+    udp: false
 ###############################################################配置分割线
 
 # 代理组策略
@@ -132,6 +139,7 @@ Proxy Group:
     type: select
     proxies:
       - "BW-GIA"
+      - "Vultr-JP"
   # 白名单模式 PROXY，黑名单模式 DIRECT
   - name: "Final"
     type: select
@@ -150,12 +158,14 @@ Proxy Group:
     proxies:
       - "PROXY"
       - "BW-GIA"
+      - "Vultr-JP"
   # 大陆流媒体面向港澳台限定服务
   - name: "HKMTMedia"
     type: select
     proxies:
       - "DIRECT"
       - "BW-GIA"
+      - "Vultr-JP"
   # 运营商及声名狼藉网站劫持
   - name: "Hijacking"
     type: select
