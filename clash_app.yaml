@@ -1605,4 +1605,4 @@ rules:
   # GeoIP China
   - GEOIP,CN,DIRECT
 
-  - MATCH,auto
+  - MATCH,Final
