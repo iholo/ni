@@ -118,7 +118,7 @@ proxies:
   - name: "BW-GIA"
     type: ss
     server: 67.230.170.149
-    port: 60678
+    port: 60677
     cipher: aes-256-cfb
     password: webweb
     udp: false
