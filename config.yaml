@@ -34,14 +34,14 @@ proxies:
   - name: "BW-GIA"
     type: ss
     server: 67.230.170.149
-    port: 60678
+    port: 60677
     cipher: aes-256-cfb
     password: webweb
     udp: false
   - name: "Vultr-JP"
     type: ss
     server: 167.179.97.200
-    port: 60677
+    port: 60678
     cipher: aes-256-cfb
     password: webweb
     udp: false
