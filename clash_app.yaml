@@ -11,7 +11,7 @@ secret: ""
 dns:
   enable: true
   nameserver:
-   # - https://10120.alidns.com/dns-query
+    - https://10120.alidns.com/dns-query
     - 119.29.29.29
     - 119.28.28.28
     - 182.254.116.116
@@ -19,11 +19,11 @@ dns:
     - 226.6.6.6
     - 114.114.114.114
     - 223.5.5.5
-  #fallback:
-   # - https://10120.alidns.com/dns-query
-   # - tls://1.0.0.1:853
-  #  - tls://dns.google:853
-   # - https://cloudflare-dns.com/dns-query
+  fallback:
+    - https://10120.alidns.com/dns-query
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+    - https://cloudflare-dns.com/dns-query
 
 cfw-bypass:
   - qq.com
