@@ -9,7 +9,7 @@ external-controller: "0.0.0.0:9090"
 secret: ""
 
 dns:
-  enable: true
+  enable: false
   nameserver:
     - https://10120.alidns.com/dns-query
     - 119.29.29.29
