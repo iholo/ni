@@ -149,6 +149,7 @@ proxy-groups:
     proxies:
       - "BW-GIA"
       - "Vultr-JP"
+      - "HW-HK"
   # 白名单模式 PROXY，黑名单模式 DIRECT
   - name: "Final"
     type: select
@@ -173,14 +174,15 @@ proxy-groups:
     type: select
     proxies:
       - "DIRECT"
-      - "BW-GIA"
-      - "Vultr-JP"
+      - "PROXY"
+
   # 运营商及声名狼藉网站劫持
   - name: "Hijacking"
     type: select
     proxies:
       - "REJECT"
       - "DIRECT"
+      - "PROXY"
 
 # 规则
 rules:
