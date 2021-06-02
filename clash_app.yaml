@@ -133,6 +133,14 @@ proxies:
     cipher: aes-256-cfb
     password: webweb
     udp: false
+    
+  - name: "HW-HK"
+    type: ss
+    server: 159.138.22.121
+    port: 60677
+    cipher: aes-256-cfb
+    password: webweb
+    udp: false
 ###############################################################配置分割线
 
 # 代理组策略
